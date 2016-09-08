@@ -2,7 +2,7 @@
 Little project to upload and run Telegram Bot on Google App Engine using python-telegram-bot library and webhooks
 
 *IMPORTANT*:
-This project was created because there are only few examples related to WebHook, python-teelgram-bot and GAE all together and maybe none related to dispatcher and webhook working at one time.
+This project was created because there are only few examples related to WebHook, python-telgram-bot and GAE all together and maybe none related to dispatcher and webhook working at one time.
 
 WHAT DO YOU NEED:
 
