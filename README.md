@@ -1,5 +1,5 @@
 # python-telegram-bot-GAE
-Little project to upload and run Telegram Bot on Google App Engine using python-telegram-bot-library
+Little project to upload and run Telegram Bot on Google App Engine using python-telegram-bot library
 
 WHAT DO YOU NEED:
 
