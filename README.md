@@ -6,7 +6,7 @@ This project was created because there are only few examples related to WebHook,
 
 WHAT DO YOU NEED:
 
-- python-telegram-bot (library)
+- python-telegram-bot (library) Version: 5.0
 - pip
 
 HOW TO SETUP THE PROJECT:
