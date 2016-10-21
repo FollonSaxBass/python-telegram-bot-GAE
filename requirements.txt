@@ -1,1 +1,1 @@
-python-telegram-bot>=2.5
+python-telegram-bot>=5.0
