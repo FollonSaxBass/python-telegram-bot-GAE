@@ -20,7 +20,7 @@ You might need to enable billing on your Google App Engine project in order to g
 
 2. Make a new folder called "lib" in the project root.
 
-3. Open a command line, navigate to your project root and type 'pip install -t lib -r requirements.txt' and wait until install is complete.
+3. Open a command line, navigate to your project root, type 'pip install -t lib -r requirements.txt' and wait until install is complete.
 
 4. Type 'gcloud config set project &lt;GAE-PROJECT-NAME&gt;' in the terminal.
 
