@@ -15,8 +15,8 @@ You might need to enable billing on your Google App Engine project in order to g
 ### SETUP
 
 1. Copy or move config.ini.example to config.ini. Inside, replace:
-&lt;TELEGRAM-BOT-TOKEN&gt; with the token BotFather gave you
-&lt;GAE-PROJECT-NAME&gt; with the same as above.
+- &lt;TELEGRAM-BOT-TOKEN&gt; with the token BotFather gave you
+- &lt;GAE-PROJECT-NAME&gt; with the same as above.
 
 2. Make a new folder called "lib" in the project root.
 
