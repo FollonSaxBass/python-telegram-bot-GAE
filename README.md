@@ -4,7 +4,7 @@ Little project to upload and run a Telegram Bot on Google App Engine using the p
 *IMPORTANT*:
 This project was created because there are only a few examples related to webhooks, python-telgram-bot and GAE all together and maybe none related to dispatcher and webhook working at one time.
 
-##WHAT YOU NEED:
+## WHAT YOU NEED:
 
 - python-telegram-bot (library) Version: 5.0
 - pip
@@ -32,7 +32,7 @@ DONE! Open your browser and visit https://<GAE-PROJECT-NAME>.appspot.com/set_web
 
 You may now use your new bot! The default function is just echo. Feel free to customize it all you like.
 
-##CREDITS:
+## CREDITS:
 I used two examples found on GitHub to setup this project:
 
  1. https://github.com/sooyhwang/Simple-Echo-Telegram-Bot
