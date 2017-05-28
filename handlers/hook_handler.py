@@ -14,7 +14,6 @@ class WebHookHandler(RequestHandler):
         '''
         Set webhook for your bot
         '''
-        setup()
         s = bot.setWebhook(APP_URL + '/' + TOKEN)
         if s:
             self.response.write("Webhook set")
