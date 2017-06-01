@@ -1,36 +1,38 @@
 # python-telegram-bot-GAE
-Little project to upload and run Telegram Bot on Google App Engine using python-telegram-bot library and webhooks
+Little project to upload and run a Telegram Bot on Google App Engine using the python-telegram-bot library and webhooks
 
 *IMPORTANT*:
-This project was created because there are only few examples related to WebHook, python-telgram-bot and GAE all together and maybe none related to dispatcher and webhook working at one time.
+This project was created because there are only a few examples related to webhooks, python-telgram-bot and GAE all together and maybe none related to dispatcher and webhook working at one time.
 
-WHAT DO YOU NEED:
+### WHAT YOU NEED
 
 - python-telegram-bot (library) Version: 5.0
 - pip
+- gcloud (https://cloud.google.com/sdk/)
 
-HOW TO SETUP THE PROJECT:
+You might need to enable billing on your Google App Engine project in order to get it to work.
 
-1. In app.yaml change "GAE-PROJECT-NAME" with your project name in GAE
+### SETUP
 
-2. In credentials.py:
-TOKEN = 'YOUR-BOT-TOKEN'
-APP_URL = 'YOUR-APP-URL'
-    - set up your token taken from  botfather
-    - set up your app url like:
-    https://GAE-PROJECT-NAME.appspot.com
+1. Copy or move config.ini.example to config.ini. Inside, replace:
+    - &lt;TELEGRAM-BOT-TOKEN&gt; with the token BotFather gave you
+    - &lt;GAE-PROJECT-NAME&gt; with your app's name in Google App Engine.
 
-3. Make a folder called "lib" in the root of the project
+2. Make a new folder called "lib" in the project root.
 
-4. Open cmd line or shell and type 'pip install -t lib -r requirements.txt' and wait until the process finishes
+3. Open a command line, navigate to your project root, type 'pip install -t lib -r requirements.txt' and wait until install is complete.
 
-5. Go to /lib/future/backports/misc.py and comment line 900 -->"# from subprocess import check_output"
+4. Type 'gcloud config set project &lt;GAE-PROJECT-NAME&gt;' in the terminal.
 
-DONE! Upload your project open your browser and go to
+5. Now type 'gcloud app create' and choose your region.
 
-- APP_URL/set_webhook, then try to send a message to your bot.
+6. Type 'gcloud app deploy'.
 
-CREDITS:
+DONE! Open your browser and visit https://&lt;GAE-PROJECT-NAME&gt;.appspot.com/set_webhook. You should read "Webhook set" in the page.
+
+You may now use your new bot! The default function is just echo. Feel free to customize it all you like.
+
+### CREDITS
 I used two examples found on GitHub to setup this project:
 
  1. https://github.com/sooyhwang/Simple-Echo-Telegram-Bot

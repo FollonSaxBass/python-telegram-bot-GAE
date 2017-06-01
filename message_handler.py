@@ -20,11 +20,12 @@ from handlers.handlers import echo, error, help, start
 dispatcher = None
 bot = Bot(TOKEN)
 
+
 def setup():
     '''GAE DISPATCHER SETUP'''
 
     global dispatcher
-    # Note that update_queue is setted to None and
+    # Note that update_queue is set to None and
     # 0 workers are allowed on Google app Engine (If not-->Problems with multithreading)
     dispatcher = Dispatcher(bot=bot, update_queue=None, workers=0)
 
@@ -36,7 +37,11 @@ def setup():
 
     return dispatcher
 
+
 def webhook(update):
     global dispatcher
     # Manually get updates and pass to dispatcher
     dispatcher.process_update(update)
+
+
+setup()
